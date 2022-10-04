@@ -1,0 +1,30 @@
+mymath.arithmetics
+==================
+
+.. automodule:: mymath.arithmetics
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      mod
+      power
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      AddSub
+      MultDivide
+   
+   
+
+   
+   
+   
