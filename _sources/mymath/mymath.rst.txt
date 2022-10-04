@@ -1,0 +1,16 @@
+mymath
+======
+
+.. automodule:: mymath
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
