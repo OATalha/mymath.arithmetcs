@@ -1,0 +1,6 @@
+mymath.arithmetics.power
+========================
+
+.. currentmodule:: mymath.arithmetics
+
+.. autofunction:: power

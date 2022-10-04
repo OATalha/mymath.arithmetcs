@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mymath.arithmetics &mdash; My Math 0.0.1 documentation</title>
+  <title>mymath.arithmetics.power &mdash; My Math 0.0.1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="mymath.arithmetics.addsub" href="mymath.arithmetics.addsub.html" />
-    <link rel="prev" title="My Math API" href="../api.html" /> 
+    <link rel="next" title="Conclusion" href="../conclusion.html" />
+    <link rel="prev" title="mymath.arithmetics.multdiv" href="mymath.arithmetics.multdiv.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,11 +43,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../background.html">Background</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../api.html">API Docs</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">mymath.arithmetics</a><ul>
+<li class="toctree-l2 current"><a class="reference internal" href="mymath.arithmetics.html">mymath.arithmetics</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="mymath.arithmetics.addsub.html">mymath.arithmetics.addsub</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mymath.arithmetics.mod.html">mymath.arithmetics.mod</a></li>
 <li class="toctree-l3"><a class="reference internal" href="mymath.arithmetics.multdiv.html">mymath.arithmetics.multdiv</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mymath.arithmetics.power.html">mymath.arithmetics.power</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">mymath.arithmetics.power</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mymath.arithmetics.power"><code class="docutils literal notranslate"><span class="pre">power()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -70,9 +73,10 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../api.html">My Math API</a> &raquo;</li>
-      <li>mymath.arithmetics</li>
+          <li><a href="mymath.arithmetics.html">mymath.arithmetics</a> &raquo;</li>
+      <li>mymath.arithmetics.power</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/mymath.arithmetics/mymath.arithmetics.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/mymath.arithmetics/mymath.arithmetics.power.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -80,67 +84,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="module-mymath.arithmetics">
-<span id="mymath-arithmetics"></span><h1>mymath.arithmetics<a class="headerlink" href="#module-mymath.arithmetics" title="Permalink to this heading"></a></h1>
-<p class="rubric">Functions</p>
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="mymath.arithmetics.mod.html#mymath.arithmetics.mod" title="mymath.arithmetics.mod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mod</span></code></a>(x, y)</p></td>
-<td><p>Returns mod of the two numbers</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="mymath.arithmetics.power.html#mymath.arithmetics.power" title="mymath.arithmetics.power"><code class="xref py py-obj docutils literal notranslate"><span class="pre">power</span></code></a>(x, y)</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Classes</p>
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AddSub</span></code>()</p></td>
-<td><p>Collection of subtraction and addition operations</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">MultDivide</span></code>()</p></td>
-<td><p>Collection of multiply and divide operations</p></td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Modules</p>
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="mymath.arithmetics.addsub.html#module-mymath.arithmetics.addsub" title="mymath.arithmetics.addsub"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mymath.arithmetics.addsub</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="mymath.arithmetics.mod.html#mymath.arithmetics.mod" title="mymath.arithmetics.mod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mymath.arithmetics.mod</span></code></a>(x, y)</p></td>
-<td><p>Returns mod of the two numbers</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="mymath.arithmetics.multdiv.html#module-mymath.arithmetics.multdiv" title="mymath.arithmetics.multdiv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mymath.arithmetics.multdiv</span></code></a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="mymath.arithmetics.power.html#mymath.arithmetics.power" title="mymath.arithmetics.power"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mymath.arithmetics.power</span></code></a>(x, y)</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
+  <div class="section" id="mymath-arithmetics-power">
+<h1>mymath.arithmetics.power<a class="headerlink" href="#mymath-arithmetics-power" title="Permalink to this heading"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="mymath.arithmetics.power">
+<span class="sig-prename descclassname"><span class="pre">mymath.arithmetics.</span></span><span class="sig-name descname"><span class="pre">power</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mymath.arithmetics.power" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
 </div>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../api.html" class="btn btn-neutral float-left" title="My Math API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="mymath.arithmetics.addsub.html" class="btn btn-neutral float-right" title="mymath.arithmetics.addsub" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="mymath.arithmetics.multdiv.html" class="btn btn-neutral float-left" title="mymath.arithmetics.multdiv" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../conclusion.html" class="btn btn-neutral float-right" title="Conclusion" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
