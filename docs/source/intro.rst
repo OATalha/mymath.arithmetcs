@@ -1,11 +1,18 @@
-Introduction
-============
+.. _mm_arith_intro:
+
+Introduction to MyMath Arithmetics package
+==========================================
 
 
-This is an intro
+This is an intro for MyMath Arithmetics package. It is an awesome package.
 
 
-Sub Introduction
+Implemenatations
 ----------------
 
-This is some more text
+It has stuff like
+
+#. Addition and Subtraction
+#. Multiplication and Division
+#. mod
+#. power

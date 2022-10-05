@@ -7,8 +7,9 @@ My Math API
 
 
 .. autosummary::
-   :toctree: mymath.arithmetics
+   :toctree: auto
    :recursive:
+   :nosignatures:
 
    mymath.arithmetics
 

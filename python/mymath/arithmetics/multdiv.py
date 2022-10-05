@@ -1,3 +1,7 @@
+"""Contains the class MultDivide
+"""
+
+
 class MultDivide:
     """Collection of multiply and divide operations """
 

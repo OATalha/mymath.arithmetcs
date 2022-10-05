@@ -13,10 +13,10 @@ sys.path.append(os.path.abspath('../../python'))
 
 
 
-project = 'My Math'
+project = 'mymath.arithmetics'
 copyright = '2022, Talha Ahmed'
 author = 'Talha Ahmed'
-release = '0.0.1'
+release = version = '0.0.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -25,16 +25,30 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.coverage',
     'sphinx.ext.autosummary',
-    'sphinx.ext.napoleon']
+    'sphinx.ext.napoleon',
+    'sphinx.ext.autosectionlabel',
+    'sphinx.ext.duration',
+    'sphinx.ext.githubpages',
+    'sphinx.ext.inheritance_diagram',
+    'sphinx.ext.todo',
+    'sphinx.ext.viewcode',
+]
+
 
 templates_path = ['_templates']
 exclude_patterns = []
 
-
 autodoc_default_options = { 'members': True, 'undoc-members': True }
-autosummary_generate = True
-autosummary_imported_members = True
+autodoc_mock_imports = []
 
+autosummary_generate = True
+autosummary_generate_overwrite = True
+autosummary_imported_members = True
+autosummary_ignore_module_all = True
+
+autosectionlabel_prefix_document = True
+
+todo_include_todos = True
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

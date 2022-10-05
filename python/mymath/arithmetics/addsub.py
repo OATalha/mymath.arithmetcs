@@ -1,3 +1,8 @@
+"""
+Contains the class AddSub
+"""
+
+
 class AddSub:
     "Collection of subtraction and addition operations"
 
