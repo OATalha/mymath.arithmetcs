@@ -11,11 +11,8 @@ Welcome to My Math's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
-   Introduction <intro>
-   Background <background>
-   API Docs <api>
-   Conclusion <conclusion>
+   intro
+   api
 
 
 Indices and tables
