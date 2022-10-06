@@ -3,12 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to My Math's documentation!
-===================================
+Welcome to My Math Arithmetic's documentation!
+==============================================
 
 
-Go To :external+maindocs:doc:`Main Documentation <index>`
-
+Go To :external+maindocs:doc:`Main Repo Docs<repos>`
 
 .. toctree::
    :maxdepth: 2
