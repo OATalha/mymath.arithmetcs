@@ -31,6 +31,8 @@ extensions = [
     'sphinx.ext.githubpages',
     'sphinx.ext.inheritance_diagram',
     'sphinx.ext.todo',
+    'sphinx.ext.extlinks',
+    'sphinx.ext.intersphinx',
     'sphinx.ext.viewcode',
 ]
 
@@ -49,6 +51,10 @@ autosummary_ignore_module_all = True
 autosectionlabel_prefix_document = True
 
 todo_include_todos = True
+
+intersphinx_mappings = {
+        'maindocs': ('https://oatalha.github.io', None)
+}
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
