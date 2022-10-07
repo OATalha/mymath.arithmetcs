@@ -6,7 +6,6 @@
 Welcome to My Math Arithmetic's documentation!
 ==============================================
 
-
 Go To :external+maindocs:doc:`Main Repo Docs<repos>`
 
 .. toctree::
