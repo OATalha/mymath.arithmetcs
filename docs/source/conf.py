@@ -40,6 +40,19 @@ extensions = [
 templates_path = ['_templates']
 exclude_patterns = []
 
+rst_prolog = '''
+ .. |logo| image:: http://oatalha.github.io/_static/One-Animation-Logo-Small.png
+             :alt: One Animation Logo
+             :target: https://oatalha.github.io/
+
+.. |repos| replace:: :doc:`REPOS<maindocs:repos>`
+.. |apidocs| replace:: :doc:`APIDOCS<maindocs:repos>`
+
+=========================== ============================ ================================
+|logo|                      .. centered :: |repos|       .. centered :: |apidocs|
+=========================== ============================ ================================
+'''
+
 autodoc_default_options = { 'members': True, 'undoc-members': True }
 autodoc_mock_imports = []
 
