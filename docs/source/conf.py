@@ -38,8 +38,8 @@ extensions = [
 ]
 
 affiliate_options = {
-        'canonical_url': 'https://oatalha.github.io/mymath.arithmetics/'
-        }
+    'canonical_url': 'https://oatalha.github.io/'
+}
 
 templates_path = ['_templates']
 exclude_patterns = []
