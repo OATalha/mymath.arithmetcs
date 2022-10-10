@@ -34,8 +34,12 @@ extensions = [
     'sphinx.ext.extlinks',
     'sphinx.ext.intersphinx',
     'sphinx.ext.viewcode',
+    'sphinx_affiliates'
 ]
 
+affiliate_options = {
+        'canonical_url': 'https://oatalha.github.io/mymath.arithmetics/'
+        }
 
 templates_path = ['_templates']
 exclude_patterns = []
