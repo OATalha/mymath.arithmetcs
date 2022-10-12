@@ -1,4 +1,2 @@
-Sphinx==3.5.4
-jinja2<3.1
-sphinx-affiliates
+Sphinx
 sphinx-rtd-theme

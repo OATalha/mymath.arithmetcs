@@ -10,8 +10,10 @@ import os
 import sys
 
 sys.path.append(os.path.abspath('../../python'))
+sys.path.append(os.path.abspath('./'))
 
-
+# sys.path.append(os.path.abspath('./'))
+# import autodoc_cache
 
 project = 'mymath.arithmetics'
 copyright = '2022, Talha Ahmed'
@@ -38,7 +40,7 @@ extensions = [
 ]
 
 affiliate_options = {
-    'canonical_url': 'https://oatalha.github.io/'
+    'canonical_url': 'https://oatalha.github.io/mymath.arithmetics/'
 }
 
 templates_path = ['_templates']
@@ -50,14 +52,14 @@ rst_prolog = '''
              :target: https://oatalha.github.io/
 
 .. |repos| replace:: :doc:`REPOS<maindocs:repos>`
-.. |apidocs| replace:: :doc:`APIDOCS<maindocs:repos>`
+.. |apidocs| replace:: :doc:`APIDOCS<maindocs:apidocs>`
 
 =========================== ============================ ================================
 |logo|                      .. centered :: |repos|       .. centered :: |apidocs|
 =========================== ============================ ================================
 '''
 
-autodoc_default_options = { 'members': True, 'undoc-members': True }
+autodoc_default_options = {'members': True, 'undoc-members': True}
 autodoc_mock_imports = []
 
 autosummary_generate = True
@@ -69,9 +71,7 @@ autosectionlabel_prefix_document = True
 
 todo_include_todos = True
 
-intersphinx_mapping = {
-        'maindocs': ('https://oatalha.github.io/', None)
-}
+intersphinx_mapping = {'maindocs': ('https://oatalha.github.io/', None)}
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
