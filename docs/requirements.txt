@@ -1,2 +1,2 @@
-Sphinx
+Sphinx==5.2.3
 sphinx-rtd-theme
