@@ -1,0 +1,29 @@
+mymath.arithmetics.multdiv
+==========================
+
+.. automodule:: mymath.arithmetics.multdiv
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      MultDivide
+   
+   
+
+   
+   
+   
+
+
+
