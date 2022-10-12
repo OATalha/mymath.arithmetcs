@@ -1,11 +1,7 @@
-﻿mymath.arithmetics
+mymath.arithmetics
 ==================
 
 .. automodule:: mymath.arithmetics
-
-   
-   
-   
 
    
    
@@ -32,17 +28,3 @@
    
    
    
-
-
-
-.. rubric:: Modules
-
-.. autosummary::
-   :toctree:
-   :recursive:
-
-   mymath.arithmetics.addsub
-   mymath.arithmetics.mod
-   mymath.arithmetics.multdiv
-   mymath.arithmetics.power
-
