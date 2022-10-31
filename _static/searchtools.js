@@ -222,7 +222,6 @@ var Search = {
         for (j = 0; j < this._affiliates.length; j++) {
           var index = this._affiliates[j];
           results = results.concat(this.performObjectSearch(objectterms[i], others, index, index.rootUrl));
-
         }
       }
     }
@@ -339,7 +338,9 @@ var Search = {
     var results = [];
 
     for (var prefix in objects) {
-      for (var name in objects[prefix]) {
+      for (var obj_index in objects[prefix]) {
+        var obj_data = objects[prefix][obj_index];
+        var name = obj_data[4];
         var fullname = (prefix ? prefix + '.' : '') + name;
         var fullnameLower = fullname.toLowerCase()
         if (fullnameLower.indexOf(object) > -1) {
@@ -353,7 +354,7 @@ var Search = {
           } else if (parts[parts.length - 1].indexOf(object) > -1) {
             score += Scorer.objPartialMatch;
           }
-          var match = objects[prefix][name];
+          var match = objects[prefix][obj_index];
           var objname = objnames[match[1]][2];
           var title = titles[match[0]];
           // If more than one term searched for, we require other words to be

@@ -1,6 +1,0 @@
-mymath.arithmetics.mod
-======================
-
-.. currentmodule:: mymath.arithmetics
-
-.. autofunction:: mod
