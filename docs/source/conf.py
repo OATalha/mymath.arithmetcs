@@ -9,8 +9,8 @@
 import os
 import sys
 
+sys.path.insert(0, os.path.abspath('./_ext'))
 
-# sys.path.append(os.path.abspath('../extensions'))
 
 project = 'mymath.arithmetics'
 copyright = '2022, Talha Ahmed'
