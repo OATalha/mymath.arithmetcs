@@ -8,6 +8,6 @@ divide
 '''
 
 
-def mod(x, y):
+def mod(x: int, y: int):
     """Returns mod of the two numbers """
     return x % y

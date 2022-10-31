@@ -9,11 +9,8 @@
 import os
 import sys
 
-sys.path.append(os.path.abspath('../../python'))
-sys.path.append(os.path.abspath('./'))
 
-# sys.path.append(os.path.abspath('./'))
-# import autodoc_cache
+# sys.path.append(os.path.abspath('../extensions'))
 
 project = 'mymath.arithmetics'
 copyright = '2022, Talha Ahmed'
@@ -24,9 +21,8 @@ release = version = '0.0.1'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'sphinx.ext.autodoc',
+    'autoapi.extension',
     'sphinx.ext.coverage',
-    'sphinx.ext.autosummary',
     'sphinx.ext.napoleon',
     'sphinx.ext.autosectionlabel',
     'sphinx.ext.duration',
@@ -36,8 +32,16 @@ extensions = [
     'sphinx.ext.extlinks',
     'sphinx.ext.intersphinx',
     'sphinx.ext.viewcode',
-    'sphinx_affiliates'
+    'sphinx_affiliates',
 ]
+
+autoapi_dirs = ['../../python']
+autoapi_python_use_implicit_namespaces = False
+autoapi_keep_files = True
+autoapi_add_objects_to_toctree = True
+autoapi_python_class_content = 'both'
+autoapi_generate_api_docs = True
+autoapi_template_dir = '_templates/autoapi'
 
 affiliate_options = {
     'canonical_url': 'https://oatalha.github.io/mymath.arithmetics/'
@@ -54,18 +58,10 @@ rst_prolog = '''
 .. |repos| replace:: :doc:`REPOS<maindocs:repos>`
 .. |apidocs| replace:: :doc:`APIDOCS<maindocs:apidocs>`
 
-=========================== ============================ ================================
-|logo|                      .. centered :: |repos|       .. centered :: |apidocs|
-=========================== ============================ ================================
+===================== ======================= ==========================
+|logo|                .. centered :: |repos|  .. centered :: |apidocs|
+===================== ======================= ==========================
 '''
-
-autodoc_default_options = {'members': True, 'undoc-members': True}
-autodoc_mock_imports = []
-
-autosummary_generate = True
-autosummary_generate_overwrite = True
-autosummary_imported_members = True
-autosummary_ignore_module_all = True
 
 autosectionlabel_prefix_document = True
 

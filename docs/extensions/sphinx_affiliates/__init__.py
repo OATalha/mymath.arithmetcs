@@ -30,10 +30,8 @@ def add_affiliates(app: "Sphinx") -> None:
         with open(searchindexfn) as fid_in:
             txt = fid_in.read()
             if txt.startswith('Search.setIndex({'):
-                print('setIndex', 'found')
                 prefix = 'Search.setAffiliate({rootUrl:"%s",' % rootUrl
                 if self.indexer_dumps_unicode:
-                    print('indexer dumps unicode', affiliatefn)
                     with open(affiliatefn, 'w', encoding='utf-8') as fid_out:
                         fid_out.write(prefix + txt[17:])
                 else:
@@ -53,8 +51,7 @@ def add_affiliates(app: "Sphinx") -> None:
                         for affiliate in affiliates:
                             txt = line.replace(self.searchindex_filename,
                                                affiliate)
-                            print('after replacment', txt)
-                            lines.append(f'{txt}s\n')
+                            lines.append(f'{txt:s}\n')
             with open(search, 'w', encoding=encoding,
                       errors='xmlcharrefreplace') as f:
                 for line in lines:

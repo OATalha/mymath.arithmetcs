@@ -5,6 +5,9 @@ Contains the class AddSub
 
 class AddSub:
     "Collection of subtraction and addition operations"
+    def __init__(self):
+        '''This is the __init__ function'''
+        pass
 
     @staticmethod
     def add(x, y):
