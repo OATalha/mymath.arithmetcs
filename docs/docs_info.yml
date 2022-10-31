@@ -1,0 +1,14 @@
+enabled: yes
+modules: ['mymath.arithmetics']
+environments: ['python-3', 'maya']
+
+# relative to root of repo
+dirs:
+  - python
+ignore: []
+
+# which modules to look for in above paths
+# used only with implicit namespaces
+top_level_packages: ['*']
+docs_source: docs/source
+docs_build: docs/build
